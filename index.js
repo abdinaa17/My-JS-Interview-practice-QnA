@@ -109,3 +109,17 @@ console.log(arrOfArr)
 // }
 
 // obj.getA() obj.getB()
+
+
+
+function isPalindrome(str) {
+  let rts = str.split('').reverse().join('')
+
+  if(str === rts) {
+    return `${str} is a palindrome`
+  }else  return `${str} is not a palindrome`
+}
+
+
+console.log(isPalindrome('str'))
+console.log(isPalindrome('mom'))
