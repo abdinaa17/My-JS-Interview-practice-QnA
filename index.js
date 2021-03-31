@@ -13,6 +13,21 @@ function addUp(num) {
 
 console.log(addUp(13))
 
+
+// Alternative
+
+function addUp(num) {
+	let total= 0
+
+  for(let i =1; i<=num; i++ ){
+     total += i 
+  }
+
+  return total
+}
+
+console.log(addUp(13))
+
 // Alternative
 function sumRange(num){
 	if(num === 1) return 1;
