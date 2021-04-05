@@ -141,15 +141,12 @@ console.log(isPalindrome('mom'))
 
 // Check if a number is an integer
 
-
-function integerCheck(x, y) {
-  if (Number.isInteger(y / x)) {
-    return 'Is an integer';
+const integerFunc = (num) => {
+  if(Number.isInteger(num)) {
+    return ` ${num} is an integer`
+  } else {
+    return ` ${num} is not an integer`
   }
-  return 'Is not an integer';
-}
+} 
 
-console.log(integerCheck(5, 10));
-
-
-console.log(integerCheck(5, 11));
+console.log(integerFunc(2.5))
