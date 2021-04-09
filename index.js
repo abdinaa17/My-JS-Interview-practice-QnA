@@ -167,4 +167,12 @@ console.log(0.1 + 0.2 == 0.3);
 
 false
 
+
+// What would following code return?
+
+console.log(typeof typeof 1);
+
+string
+
+typeof 1 will return "number" and typeof "number" will return string.
 // Source https://www.toptal.com/javascript/interview-questions
