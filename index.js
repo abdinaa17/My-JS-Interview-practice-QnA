@@ -159,14 +159,14 @@ console.log(integerFunc(2.5))
 The expression will be evaluated to true, since NULL will be treated as any other undefined variable.
 
 Note: JavaScript is case-sensitive and here we are using NULL instead of null.
-
+// Source https://www.toptal.com/javascript/interview-questions
 // What will the code below output? Explain your answer.
 
 
 console.log(0.1 + 0.2 == 0.3);
 
 false
-
+// Source https://www.toptal.com/javascript/interview-questions
 
 // What would following code return?
 
