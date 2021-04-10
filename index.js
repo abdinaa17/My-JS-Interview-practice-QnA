@@ -176,3 +176,10 @@ string
 
 typeof 1 will return "number" and typeof "number" will return string.
 // Source https://www.toptal.com/javascript/interview-questions
+
+// What is a “closure” in JavaScript? Provide an example.
+
+
+A closure is an inner function that has access to the variables in the outer (enclosing) function’s scope chain. The closure has access to variables in three scopes; specifically: (1) variable in its own scope, (2) variables in the enclosing function’s scope, and (3) global variables.
+
+
