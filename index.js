@@ -152,7 +152,7 @@ const integerFunc = (num) => {
 console.log(integerFunc(2.5))
 
 
-// Alterbnative
+// Alternative
 
 function isInteger(x) { return (x ^ 0) === x; } 
 
