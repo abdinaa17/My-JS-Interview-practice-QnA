@@ -1,4 +1,4 @@
-//  Create a function that concatenates n input arrays, where n is variable.
+### Create a function that concatenates n input arrays, where n is variable.
 function concat(...args) {
   const arr = []
   return arr.concat(...args)
