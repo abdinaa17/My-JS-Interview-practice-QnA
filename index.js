@@ -205,4 +205,17 @@ const sumUp = function (){
 
 console.log(sumUp(1,2,3,4,5))
 
+// Alternative using arrow function
+
+const sumUp = (...args)=> {
+     const total = args.reduce((acc, item)=> {
+
+    acc +=item
+    return acc
+
+
+  }, 0)
+  return total
+}
+
 
