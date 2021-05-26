@@ -187,4 +187,22 @@ typeof 1 will return "number" and typeof "number" will return string.
 
 A closure is an inner function that has access to the variables in the outer (enclosing) function’s scope chain. The closure has access to variables in three scopes; specifically: (1) variable in its own scope, (2) variables in the enclosing function’s scope, and (3) global variables.
 
+Multiple arguments
+
+const sumUp = function (){
+
+  const args = [...arguments]
+  const total = args.reduce((acc, item)=> {
+
+    acc +=item
+    return acc
+
+
+  }, 0)
+  return total
+
+}
+
+console.log(sumUp(1,2,3,4,5))
+
 
