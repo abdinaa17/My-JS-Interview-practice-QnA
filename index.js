@@ -219,3 +219,63 @@ const sumUp = (...args)=> {
 }
 
 
+
+// Anagram without regex 
+
+function anagram(str1, str2) {
+
+// Check for the lenght of the input
+
+if (str1.length !== str2.length) {
+return false
+}
+
+// Create an empty obj to keep track of my count
+
+const output = {}
+// For loop for str1
+
+for (let i =0 ; i< str1.length; i++) {
+
+
+const temp = str1[i]
+
+
+if (output[temp]) {
+		output[temp] +=1
+} else {
+output[temp] = 1
+}
+
+
+}
+
+
+// For loop for str2
+
+
+for (let i =0 ; i< str2.length; i++) {
+
+
+const temp = str2[i]
+
+
+if (!output[temp]) {
+		return false
+} else {
+output[temp] -= 1
+}
+
+}
+
+
+return true
+
+
+}
+
+
+
+console.log(anagram('baba', 'bbaa'))
+console.log(anagram('mama', 'baba')) 
+
