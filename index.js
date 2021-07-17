@@ -187,7 +187,7 @@ typeof 1 will return "number" and typeof "number" will return string.
 
 A closure is an inner function that has access to the variables in the outer (enclosing) function’s scope chain. The closure has access to variables in three scopes; specifically: (1) variable in its own scope, (2) variables in the enclosing function’s scope, and (3) global variables.
 
-Multiple arguments
+// Multiple arguments
 
 const sumUp = function (){
 
@@ -278,4 +278,45 @@ return true
 
 console.log(anagram('baba', 'bbaa'))
 console.log(anagram('mama', 'baba')) 
+
+// Number of consecutive characters
+
+function repeatingStr(str) {
+
+// Max
+let strMax = 0
+// tempMax 
+
+let tempMax = 1 
+
+for(let i = 0; i<str.length; i++) {
+// Get the first iteration
+const currentItem = str[i]
+
+// Next iteration
+
+const nextItem = str[i+ 1]
+
+// Compate current and next
+
+if (currentItem === nextItem) {
+
+		tempMax++
+
+} else {
+
+strMax = Math.max(strMax, tempMax);
+
+tempMax = 1
+
+
+}
+
+}
+
+return strMax 
+
+}
+
+console.log(repeatingStr('aabbbbccd')) // 4
 
