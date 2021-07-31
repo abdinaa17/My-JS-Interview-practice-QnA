@@ -28,7 +28,7 @@ function addUp(num) {
 
 console.log(addUp(13))
 
-// Alternative
+// Alternative using a recursion. 
 function sumRange(num){
 	if(num === 1) return 1;
 
