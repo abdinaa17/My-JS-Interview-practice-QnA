@@ -44,7 +44,7 @@ function fooBar() {
 
 	for(let i=17; i<=53; i++) {
 
-		if(i % 2 === 10 ) {
+		if(i % 10 === 0) {
 			console.log('FooBar')
 		} else if (i % 2 === 0) {
 			console.log('Foo')
@@ -57,8 +57,6 @@ function fooBar() {
 }
 
 fooBar();
-
-
 
 // Find the longest word in a string
 function findLongestWordLength(str) {
